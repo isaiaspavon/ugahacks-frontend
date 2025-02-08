@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './LoginPage.css';
+import logo from '../assets/LOGO for WibeCheck.jpg';
 
 function LoginPage() {
   const [count, setCount] = useState(0);
@@ -7,6 +8,7 @@ function LoginPage() {
   return (
     <div className="container">
       <div className="card">
+        <img className="logo" src={logo} alt="LOGO" width="100" height="100"></img>
         <h1 className="header-text">Sign In to WibeCheck</h1>
         <p className="subtext">Welcome back! Please sign in to continue.</p>
 
