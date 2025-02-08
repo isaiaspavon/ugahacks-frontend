@@ -24,6 +24,7 @@ const ActivityPage = () => {
                 <NavBarActivity />
             </div>
 
+            <div className={styles.background}></div>
             {/* Main Content */}
             <div className={styles.page}>
                 <div className={styles.questionBox}>
