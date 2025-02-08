@@ -70,10 +70,10 @@ body {
     overflow-y: auto; /* Allows scrolling */
 }
 
-.imagePart{
+.imagePart {
     width: 85vw;
+    height: 35vw;
     margin-bottom: 20px;
-    height:35vw;
     background-color: white;
     display: none; /* Hidden by default */
     opacity: 0;
@@ -82,6 +82,27 @@ body {
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
     justify-content: flex-start;
+    
+    position: relative;
+    border-radius: 12px; /* Optional for rounded edges */
+    padding: 20px;
+
+    /* Create a full gradient border */
+    border: 5px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: 
+        linear-gradient(white, white),  /* Inner white background */
+        linear-gradient(to right, #0AFDF7, #FC08FD); /* Gradient border */
+}
+
+.imagePart::before {
+    content: "";
+    position: absolute;
+    top: -5px; left: -5px; right: -5px; bottom: -5px;
+    background: linear-gradient(to right, #0AFDF7, #FC08FD);
+    z-index: -1;
+    border-radius: 12px; /* Should match .imagePart */
 }
 
 .imageWords{
