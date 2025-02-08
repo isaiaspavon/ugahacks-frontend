@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    padding-top: 20px; /* Prevents content from overlapping navbar */
+}
+
+
+/* Mood Section */
+.yourMood {
+    background-color: #363E51;
+    border-radius: 30px;
+    outline: 2px solid black;
+    padding: 20px;
+    width: fit-content; /* Adjust to fit content properly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Title & Paragraph */
+.title {
+    background: linear-gradient(to right, #0AFDF7, #FC08FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.paragraph {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size: x-large;
+    color: white;
+
+}
+
+.resultsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, auto);
+    gap: 15px;
+    width: 100%;
+    max-width: 1000px; /* Ensures grid does not stretch too wide */
+    margin-top: 5px;
+    place-items: center; /* Centers items inside the grid */
+}
+
+/* Hover Effect */
+.gridItem:hover {
+    transform: scale(1.05);
+}
+
+/* Image */
+.gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height:150px;
+    max-width: 180px; /* Ensures uniform width */
+}
+
+/* Ensure image fills the space properly */
+.songImage {
+    width: 100%; /* Adjust image to fit */
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Label should be clearly visible and positioned below */
+.songLabel {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    color: black;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.moodHeader {
+    display: flex;
+    align-items: center; /* Vertically centers both */
+    justify-content: center;
+    gap: 10px;
+}
+
+.moodText {
+    font-size: xx-large; 
+    font-weight: bold;
+    margin-top: 25px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.moodHeader, .moodText {
+    line-height: 1.2; /* Ensures both elements have the same text height */
+}
+
+
+
+.manyButtons{
+    width: 88%;
+    height:30px;
+    margin-top: 10px;
+    gap: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.create{
+    background-color: #0AFDF7;
+    width: 20vw;
+    height: 3vw;
+    font-size: 16px;    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+
+}
+
+.shuffle{
+background-color: #B6A4D6;
+    width: 20vw;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+    height: 3vw;
+}
+
+.again{
+    background-color: #FC08FD;
+    width: 20vw;
+    height: 3vw;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.page {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding-top: 80px; /* Prevents content from overlapping navbar */
+    transition: background-color 0.5s ease-in-out; /* Smooth transition */
+}
+
+.moodText {
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0;
+    transition: color 0.5s ease-in-out; /* Smooth transition */
+}
+    

@@ -6,6 +6,7 @@ import ActivityPage from './pages/ActivityPage.jsx';
 import PostAnalysisPage from "./pages/PostAnalysisPage.jsx";
 import styles from "./App.module.css";
 import logo from "./assets/LOGO for WibeCheck.jpg";
+import ResultPage from "./pages/ResultPage.jsx"
 
 function Home() {
   const navigate = useNavigate();
@@ -47,6 +48,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/activity" element={<ActivityPage />} />
         <Route path="/post-analysis" element={<PostAnalysisPage />} />
+        <Route path ="/result" element={<ResultPage />} />
       </Routes>
     </Router>
   );
