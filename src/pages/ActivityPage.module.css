@@ -1,3 +1,22 @@
-.navBar{
+body {
+    margin: 0;
+    padding: 0;
     width: 100%;
+    overflow-x: hidden;
+}
+
+.navBar {
+    position: fixed;  /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ensures it stretches across the screen */
+    height: 60px; /* Adjust height as needed */
+    background-color: #1e1e2e;
+    outline: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusts content alignment */
+    padding: 0 20px; /* Adds some spacing on the sides */
+    box-sizing: border-box;
 }

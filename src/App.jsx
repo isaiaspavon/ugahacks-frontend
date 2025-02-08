@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import SignupPage from './pages/SignupPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
-import ActivityPage from './pages/ActivityPage.tsx';
+import ActivityPage from './pages/ActivityPage.jsx';
 import styles from "./App.module.css";
 import logo from "./assets/LOGO for WibeCheck.jpg";
 
