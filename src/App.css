@@ -14,7 +14,6 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
-  height: 60vh;
   background-color: #1e1e2e;
   justify-content: center;
   align-items: center;

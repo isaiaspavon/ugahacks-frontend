@@ -1,0 +1,41 @@
+import { useState } from 'react';
+import './LoginPage.css';
+
+function LoginPage() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div className="container">
+      <div className="card">
+        <h1 className="header-text">Sign In to Wibe Check</h1>
+        <p className="subtext">Welcome back! Please sign in to continue.</p>
+
+        <div className="auth-buttons">
+          <button className="auth-button">GitHub</button>
+          <button className="auth-button">Google</button>
+        </div>  
+
+        <div className="hr-container">
+          <hr />
+          <span className="or-text">or</span>
+          <hr />
+        </div>
+
+        {/* Email Input */}
+        <div className="email-container">
+          <label htmlFor="email" className="email-label">Email Address</label>
+          <input type="email" id="email" className="email-input" placeholder="Enter your email address" />
+        </div>
+
+        <button className="continue-button">Continue</button>
+
+        <div className="no-account">
+          <span className="no-account-text">No Account?</span>
+          <span className="create-one">Create One</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default LoginPage;

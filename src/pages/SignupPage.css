@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    font-family: 'Inter', sans-serif;
+    background-color: #1e1e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    height: 60vh;
+    background-color: #1e1e2e;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    width: 560px;
+    height: 533px;
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 67px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-text {
+    color: #4d4d4d;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .subtext {
+    color: #717171;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .auth-buttons {
+    width: 100%;
+    max-width: 623px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  i:after {
+    font-size: 30px;
+    color: black;
+    padding: 20px;
+    content: '\2665';
+    display: inline-block;
+  }
+  
+  .auth-button {
+    width: 48%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .email-container {
+    width: 100%;
+    max-width: 625px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .email-label {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #4d4d4d;
+  }
+  
+  .email-input {
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+  }
+  
+  .email-input:focus {
+    border-color: #6d57ff;
+  }
+  
+  .continue-button {
+    width: 100%;
+    max-width: 605px;
+    height: 77px;
+    background-color: #6d57ff;
+    border-radius: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Istok Web', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .continue-button:hover {
+    background-color: #5a43e0;
+  }
+  
+  .no-account {
+    width: 100%;
+    max-width: 306px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .no-account-text {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Istok Web', sans-serif;
+    color: black;
+  }
+  
+  .create-one {
+    color: #0800ff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .create-one:hover {
+    color: #0600cc;
+  }
+  .line {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hr-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .hr-container hr {
+    flex: 1;
+    border: none;
+    border-top: 2px solid #ccc;
+  }
+  
+  .or-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4d4d4d;
+  }
+  
