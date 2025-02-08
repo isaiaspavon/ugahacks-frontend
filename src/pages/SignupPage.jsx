@@ -4,13 +4,14 @@ import styles from './SignupPage.module.css'; // Import CSS module
 import logo from '../assets/LOGO for WibeCheck.jpg';
 
 function SignupPage() {
-  const [count, setCount] = useState(0);
-  const navigate = useNavigate(); // Initialize navigate
+const navigate = useNavigate();
 
   return (
     <div className={styles.container}>
       <div className={styles.card}>
+        <button onClick={() => navigate('/')}>
         <img className={styles.logo} src={logo} alt="LOGO" width="100" height="100"></img>
+        </button>
         <h1 className={styles.headerText}>Create Your Account</h1>
         <p className={styles.subtext}>Welcome! Please fill in the details to get started.</p>
 
@@ -57,6 +58,7 @@ function SignupPage() {
         </div> 
       </div>
     </div>
+    
   );
 }
 
