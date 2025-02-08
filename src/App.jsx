@@ -33,7 +33,7 @@ function Home() {
 
   <div className = {styles.bigInfo}>
     <h1 className = {styles.bigInfoTitle}>Welcome to WibeCheck.</h1>
-    <h3 className = {styles.smallInfoTitle}>Personalize a playlist for your mood as it goes sad, angry, happy, or sleepy.</h3>
+    <h3 className = {styles.smallInfoTitle}>Personalize a playlist for your mood: <span className={styles.sad}>sad</span>, <span className={styles.angry}>angry</span>, <span className={styles.happy}>happy</span>, or <span className={styles.sleepy}>sleepy</span>.</h3>
     <div className = {styles.activityButtonContainer}>
       <h3 className = {styles.smallerInfoTitle}>Ready to get started?</h3>
       <button className = {styles.activityButton} onClick={() => navigate('/signup')}>Let's do it.</button>
@@ -41,8 +41,11 @@ function Home() {
   </div> 
 
   <div className = {styles.divForUserStats}>
-    <h1>What's up firulais</h1>
+    <h1 className = {styles.headingForUserStats}>What's up listeners</h1>
+    <p className = {styles.displayParagraphForUserStats}>The Stats are ready.</p>
+    <p className = {styles.bottomOfHeadingForUserStats}>Are you?</p>
   </div>
+  
   </>
   );
 }

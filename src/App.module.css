@@ -6,7 +6,8 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #1e1e2e;  
   align-items: flex-start;
-  min-height: 60vh;
+  /*min-height: 150vh;*/
+  min-height: fit-content;
 }
 
 .container {
@@ -289,19 +290,20 @@ nav a{
 
 .bigInfo{
   background-color: white;
-  height: 300px;
+  height: 325px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   width: 96%;
-  margin-top: 10px;
+  margin-top: 35px;
   border-radius: 75px;
   margin-left: 2%;
 }
 
 .bigInfoTitle {
   margin-left: 5%;
+  
   background: linear-gradient(90deg, #0AFDF7, #FC08FD, #0AFDF7);
   background-size: 200% 200%; 
   -webkit-background-clip: text;
@@ -361,3 +363,49 @@ nav a{
   flex-direction: row;
   margin-top: 10px;
 }
+
+.sad {
+  color: blue;
+}
+.angry {
+  color: darkred;
+}
+.happy {
+  color: #d19e00;
+}
+.sleepy {
+  color: purple;
+}
+
+.headingForUserStats {
+  color: #ff94f9;
+  height: 50px;
+  font-weight: bold;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.displayParagraphForUserStats {
+  color: #00e0dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  font-weight: bold;
+  white-space: wrap;
+}
+
+.bottomOfHeadingForUserStats {
+  color: #00e0dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  font-weight: bold;
+  white-space: wrap;
+}
+
