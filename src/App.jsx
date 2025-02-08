@@ -31,7 +31,7 @@ function Home() {
 
 
   <div className = {styles.bigInfo}>
-    <h1 className = {styles.bigInfoTitle}>What is WibeCheck?</h1>
+    <h1 className = {styles.bigInfoTitle}>So what's the Wibe?</h1>
     <button className = {styles.activityButton} onClick={() => navigate('/activity')}>Activity Page</button>
   </div> 
   </>
