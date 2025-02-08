@@ -7,7 +7,7 @@ function LoginPage() {
   return (
     <div className="container">
       <div className="card">
-        <h1 className="header-text">Sign In to Wibe Check</h1>
+        <h1 className="header-text">Sign In to WibeCheck</h1>
         <p className="subtext">Welcome back! Please sign in to continue.</p>
 
         <div className="auth-buttons">
