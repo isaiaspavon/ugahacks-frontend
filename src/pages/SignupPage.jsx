@@ -40,9 +40,9 @@ function SignupPage() {
         </div>
 
         {/* Password Input */}
-        <div className="password-container">
-          <label htmlFor="password" className="input-label">Password</label>
-          <input type="password" id="password" className="input-field" placeholder="Enter your password" />
+        <div className="email-container">
+          <label htmlFor="password" className="email-label">Password</label>
+          <input type="password" id="password" className="email-input" placeholder="Enter your password" />
         </div>
 
         <button className="continue-button">Continue</button>
