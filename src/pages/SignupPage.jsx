@@ -1,58 +1,63 @@
 import { useState } from 'react';
-import './SignupPage.css';
+import { useNavigate } from 'react-router-dom';
+import styles from './SignupPage.module.css'; // Import CSS module
+import logo from '../assets/LOGO for WibeCheck.jpg';
 
 function SignupPage() {
-  const [count, setCount] = useState(0);
+const navigate = useNavigate();
 
   return (
-    <div className="container">
-      <div className="card">
-        <h1 className="header-text">Create Your Account</h1>
-        <p className="subtext">Welcome! Please fill in the details to get started.</p>
-
-        <div className="auth-buttons">
-          <button className="auth-button">GitHub</button>
-          <button className="auth-button">Google</button>
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <button className = {styles.logo} onClick={() => navigate('/')}>
+        <img className={styles.logo} src={logo} alt="LOGO" width="100" height="100"></img>
+        </button>
+        <h1 className={styles.headerText}>Create Your Account</h1>
+        <p className={styles.subtext}>Welcome! Please fill in the details to get started.</p>
+        <div className={styles.authButtons}>
+          <button className={styles.authButton}>GitHub</button>
+          <button className={styles.authButton}>Google</button>
         </div>  
 
-        <div className="hr-container">
+        <div className={styles.hrContainer}>
           <hr />
-          <span className="or-text">or</span>
+          <span className={styles.orText}>or</span>
           <hr />
         </div>
 
-        {/* First Name and Last Name Inputs - Same Row */}
-        <div className="name-container">
-  <div className="input-group">
-    <label htmlFor="firstName" className="input-label">First Name</label>
-    <input type="text" id="firstName" className="name-input" placeholder="First Name"/>
-  </div>
-  <div className="input-group">
-    <label htmlFor="lastName" className="input-label">Last Name</label>
-    <input type="text" id="lastName" className="name-input" placeholder="Last Name"/>
-  </div>
-</div>
+        {/* First Name and Last Name Inputs */}
+        <div className={styles.nameContainer}>
+          <div className={styles.inputGroup}>
+            <label htmlFor="firstName" className={styles.inputLabel}>First Name</label>
+            <input type="text" id="firstName" className={styles.nameInput} placeholder="First Name"/>
+          </div>
+          <div className={styles.inputGroup}>
+            <label htmlFor="lastName" className={styles.inputLabel}>Last Name</label>
+            <input type="text" id="lastName" className={styles.nameInput} placeholder="Last Name"/>
+          </div>
+        </div>
 
         {/* Email Input */}
-        <div className="email-container">
-          <label htmlFor="email" className="email-label">Email Address</label>
-          <input type="email" id="email" className="email-input" placeholder="Enter your email" />
+        <div className={styles.emailContainer}>
+          <label htmlFor="email" className={styles.emailLabel}>Email Address</label>
+          <input type="email" id="email" className={styles.emailInput} placeholder="Enter your email" />
         </div>
 
         {/* Password Input */}
-        <div className="password-container">
-          <label htmlFor="password" className="input-label">Password</label>
-          <input type="password" id="password" className="input-field" placeholder="Enter your password" />
+        <div className={styles.emailContainer}>
+          <label htmlFor="password" className={styles.emailLabel}>Password</label>
+          <input type="password" id="password" className={styles.emailInput} placeholder="Enter your password" />
         </div>
 
-        <button className="continue-button">Continue</button>
+        <button className={styles.continueButton}>Continue</button>
 
-        <div className="no-account">
-          <span className="no-account-text">Already have an account?</span>
-          <span className="create-one">Log in</span>
-        </div>
+        <div className={styles.noAccount}>
+          <span className={styles.noAccountText}>Already have an account?</span>
+          <button className={styles.createOne} onClick={() => navigate('/login')}>Go to Login</button>
+        </div> 
       </div>
     </div>
+    
   );
 }
 
