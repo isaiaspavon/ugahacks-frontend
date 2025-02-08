@@ -6,10 +6,12 @@ import spotifyLogo from "../assets/spotify-logo.jpg";
 function PostAnalysisPage() {
     const [activeBar, setActiveBar] = useState(0);
 
+    const barHeights = [10, 30, 15, 40, 25, 35, 12, 45, 20, 50, 28, 37, 14, 48, 22, 42, 18, 38, 26, 46];
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setActiveBar((prev) => (prev + 1) % 10);
-        }, 500);
+            setActiveBar((prev) => (prev + 1) % barHeights.length);
+        }, 250);
 
         return () => clearInterval(interval);
     }, []);
@@ -22,10 +24,11 @@ function PostAnalysisPage() {
                 </h1>
                 <div className={styles.spotifyCode}>
                     <div className={styles.bars}>
-                        {Array.from({ length: 10}).map((_, index) => (
+                        {barHeights.map((height, index) => (
                             <div
-                            key={index}
-                            className={`${styles.bar} ${index === activeBar ? styles.active : ""}`}
+                                key={index}
+                                className={`${styles.bar} ${index === activeBar ? styles.active : ""}`}
+                                style={{ height: `${height}px` }} // Set height dynamically
                             ></div>
                         ))}
                     </div>
