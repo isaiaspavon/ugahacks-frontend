@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
-import './LoginPage.css';
+import { useNavigate } from 'react-router-dom';
+import styles from './LoginPage.module.css'; // Import CSS module
 import logo from '../assets/LOGO for WibeCheck.jpg';
 
 function LoginPage() {
@@ -8,33 +8,33 @@ function LoginPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="container">
-      <div className="card">
-        <img className="logo" src={logo} alt="LOGO"></img>
-        <h1 className="header-text">Sign In to WibeCheck</h1>
-        <p className="subtext">Welcome back! Please sign in to continue.</p>
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <img className={styles.logo} src={logo} alt="LOGO"></img>
+        <h1 className={styles.header-text}>Sign In to WibeCheck</h1>
+        <p className={styles.subtext}>Welcome back! Please sign in to continue.</p>
 
-        <div className="auth-buttons">
-          <button className="auth-button">Google</button>
+        <div className={styles.authButtons}>
+          <button className={styles.authButton}>Google</button>
         </div>  
 
-        <div className="hr-container">
+        <div className={styles.hrContainer}>
           <hr />
-          <span className="or-text">or</span>
+          <span className={styles.orText}>or</span>
           <hr />
         </div>
 
         {/* Email Input */}
-        <div className="email-container">
-          <label htmlFor="email" className="email-label">Email Address</label>
-          <input type="email" id="email" className="email-input" placeholder="Enter your email address" />
+        <div className={styles.emailContainer}>
+          <label htmlFor="email" className={styles.emailLabel}>Email Address</label>
+          <input type="email" id="email" className={styles.emailInput} placeholder="Enter your email address" />
         </div>
 
-        <button className="continue-button">Continue</button>
+        <button className={styles.continueButton}>Continue</button>
 
-        <div className="no-account">
-          <span className="no-account-text">No Account?</span>
-          <button className="create-one" onClick={() => navigate('/signup')}>Create One</button>
+        <div className={styles.noAccount}>
+          <span className={styles.noAccountText}>No Account?</span>
+          <button className={styles.createOne} onClick={() => navigate('/signup')}>Create One</button>
         </div>
       </div>
     </div>
