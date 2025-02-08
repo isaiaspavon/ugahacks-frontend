@@ -301,7 +301,39 @@ nav a{
 }
 
 .bigInfoTitle {
-  margin-left: 2%;
+  margin-left: 5%;
+  background: linear-gradient(90deg, #0AFDF7, #FC08FD, #0AFDF7);
+  background-size: 200% 200%; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 50px;
+  font-weight: bold;
+}
+
+.smallInfoTitle {
+  margin-left: 5%;
+  color: black;
+  /*
+  background: linear-gradient(90deg, #FC08FD, #0AFDF7, #FC08FD);
+  background-size: 200% 200%; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  */
+  
+}
+
+.smallerInfoTitle{
+  margin-left: 49%;
+  /*background: linear-gradient(90deg, #FC08FD, #0AFDF7, #FC08FD);
+  background-size: 200% 200%; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  white-space: nowrap;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
 .activityButton {
@@ -312,11 +344,20 @@ nav a{
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
-  margin-left: 2%;
+  margin-left: 10%;
   /*margin-left: 25%;*/
+  white-space: nowrap;
 }
 
 .activityButton:hover {
-  background-color: #00b5b5;
+  background-color: #FC08FD;
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.activityButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
 }

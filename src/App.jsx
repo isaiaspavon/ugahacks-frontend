@@ -32,8 +32,12 @@ function Home() {
 
 
   <div className = {styles.bigInfo}>
-    <h1 className = {styles.bigInfoTitle}>What is WibeCheck?</h1>
-    <button className = {styles.activityButton} onClick={() => navigate('/activity')}>Activity Page</button>
+    <h1 className = {styles.bigInfoTitle}>Welcome to WibeCheck.</h1>
+    <h3 className = {styles.smallInfoTitle}>Personalize a playlist for your mood as it goes sad, angry, happy, or sleepy.</h3>
+    <div className = {styles.activityButtonContainer}>
+      <h3 className = {styles.smallerInfoTitle}>Ready to get started?</h3>
+      <button className = {styles.activityButton} onClick={() => navigate('/signup')}>Let's do it.</button>
+    </div>
   </div> 
   </>
   );
