@@ -13,7 +13,7 @@ $ git init
 ```
 $ git remote add origin git@github.com:isaiaspavon/ugahacks-frontend.git
 ```
-
+<!--
 ```
 $ npm install
 ```
@@ -33,7 +33,7 @@ npm i bcryptjs
 ```
 npx auth secret
 ```
-
+-->
 
 ## Coding Workflow
 
