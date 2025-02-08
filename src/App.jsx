@@ -15,7 +15,7 @@ function Home() {
   <div className = {styles.page}>
     <div className={styles.navBar}>
       <div className={styles.test}>
-        <div className={styles.firstButtons}>
+        <div className={styles.nameOfApp}>
           <img className={styles.logo} src={logo} alt="LOGO" width="50" height="50"></img>
           <h2 className = {styles.title}>WibeCheck</h2>
           <button className={styles.about}>About</button>
@@ -30,8 +30,9 @@ function Home() {
   </div>
 
 
-    <div className = {styles.bigInfo}>
-    <button onClick={() => navigate('/activity')}>Activity Page</button>
+  <div className = {styles.bigInfo}>
+    <h1 className = {styles.bigInfoTitle}>What is WibeCheck?</h1>
+    <button className = {styles.activityButton} onClick={() => navigate('/activity')}>Activity Page</button>
   </div> 
   </>
   );
