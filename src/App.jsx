@@ -10,16 +10,18 @@ function Home() {
 
   return (
   <>
+  <div className = {styles.page}>
     <div className={styles.navBar}>
+    <img className={styles.logo} src={logo} alt="LOGO" width="50" height="50"></img>
       <div className={styles.firstButtons}>
-        <button>About</button>
-        <button>Content</button>
+        <button className={styles.button}>About</button>
+        <button className={styles.button}>Content</button>
       </div>
       <div className={styles.nextButtons}>
-        <button>Login</button>
-        <button>Get Started</button>
+        <button className={styles.button}>Login</button>
+        <button className={styles.button}>Get Started</button>
       </div>
-      <img className={styles.logo} src={logo} alt="LOGO" width="100" height="100"></img>
+    </div>
     </div>
 
 

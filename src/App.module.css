@@ -138,6 +138,16 @@ i:after {
   transition: background-color 0.3s ease;
 }
 
+.firstButtons{
+  display: flex;
+  align-items: center;
+}
+
+.nextButtons{
+  display: flex;
+  align-items: center;
+}
+
 .continue-button:hover {
   background-color: #5a43e0;
 }
@@ -193,4 +203,23 @@ i:after {
   font-size: 18px;
   font-weight: bold;
   color: #4d4d4d;
+}
+/* NAV stuff */
+.navBar{
+  background-color: rgb(41, 40, 40);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display:flex;
+  flex-direction: row;
+}
+
+.logo{
+  order:0 
+}
+
+
+nav a{
+  text-decoration: none;
+  color:white;
+  margin: 0px;
+  border: 10px solid rgb(41, 40, 40);
 }
