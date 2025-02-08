@@ -5,137 +5,162 @@ body {
     height: 100vh;
 }
 
+/* Navigation Bar */
 .navBar {
-    position: fixed;  /* Keeps it at the top */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;  /* Ensures it stretches across the screen */
-    height: 60px; /* Adjust height as needed */
+    width: 100%;
+    height: 60px;
     background-color: #1e1e2e;
     outline: 1px solid black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 1000; /* Ensures navbar stays on top */
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjusts content alignment */
-    padding: 0 20px; /* Adds some spacing on the sides */
+    justify-content: space-between;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
+/* Main Page Layout */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    padding-top: 80px; /* Prevents content from overlapping navbar */
+}
 
+/* Gradient Text */
 .gradientText {
     background: linear-gradient(to right, #0AFDF7, #FC08FD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block; /* Ensures text renders correctly */
-    font-weight: 900; /* Make it bold */
-    font-size: 3rem; /* Increase size */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
     margin-bottom: 20px;
     margin-top: 15px;
-    text-align: center;
 }
 
+/* Question Box */
 .questionBox {
     margin-top: 100px;
-    width: 96vw;  /* Ensures it spans the entire viewport width */
-    height: 200px; /* Adjust height as needed */
+    width: 96vw;
+    height: 200px;
     border-radius: 50px;
-    margin-left: 2vw;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 10px;
-    margin-right: 2vw;
+    margin: 0 auto 10px auto;
     background-color: #363E51;
-    display: flex; /* Centers content inside */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
 }
 
-.wibeButton{
+/* Upload Button */
+.wibeButton {
     background-color: white;
-    color:black;
-    outline: solid;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    outline-color: black;
-    outline-width: 2px;
+    color: black;
+    outline: solid black 2px;
     width: 50%;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
-.page {
+/* Image Upload Section */
+.imageContainer {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Align content to the top */
-    min-height: 100vh; /* Ensures it grows beyond viewport */
-    width: 100vw;
-    overflow-y: auto; /* Allows scrolling */
+    margin-top: 20px;
+    padding-top: 20px; /* Adds space between navbar and image box */
 }
 
+/* Image Part with Gradient Border */
 .imagePart {
     width: 85vw;
     height: 35vw;
     margin-bottom: 20px;
     background-color: white;
-    display: none; /* Hidden by default */
-    opacity: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: opacity 0.5s ease-in-out;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    
-    position: relative;
-    border-radius: 12px; /* Optional for rounded edges */
+    justify-content: center;
+    border-radius: 12px;
     padding: 20px;
-
-    /* Create a full gradient border */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     border: 5px solid transparent;
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     background-image: 
-        linear-gradient(white, white),  /* Inner white background */
+        linear-gradient(white, white), /* Inner white background */
         linear-gradient(to right, #0AFDF7, #FC08FD); /* Gradient border */
 }
 
-.imagePart::before {
-    content: "";
-    position: absolute;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    top: -5px; left: -5px; right: -5px; bottom: -5px;
-    background: linear-gradient(to right, #0AFDF7, #FC08FD);
-    z-index: -1;
-    border-radius: 12px; /* Should match .imagePart */
-}
-
-.imageWords{
-    color:black;
-}
-
-/* When visible, fade in */
+/* When Image Part is Visible */
 .imagePart.show {
-    display: block;
-    display: flex;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-    justify-content: center;
     opacity: 1;
+    margin-top: 20px; /* Ensures spacing from navbar */
 }
 
-.homeButton {
-    display: block;  /* Makes it a block element */
-    margin: 20px auto;  /* Centers it horizontally */
+/* File Input */
+.fileInput {
+    display: block;
+    margin: 10px auto; /* Centers it */
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    width: fit-content; /* Makes the input only as wide as needed */
+}
+
+/* Analyze Button */
+.analyzeButton {
+    display: block;
+    margin: 20px auto;
     padding: 10px 20px;
-    width:50%;
+    width: 50%;
     font-size: 1.2rem;
     background-color: #0AFDF7;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: background 0.3s ease;
+}
+
+/* Image Text */
+.imageWords {
+    color: black;
+}
+
+.fileInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures it takes full width */
+    margin-top: 15px;
+}
+
+.hiddenFileInput {
+    display: none; /* Hides the default file input */
+}
+
+.customFileButton {
+    background-color: #0AFDF7;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.customFileButton:hover {
+    background-color: #08c8d7;
 }
