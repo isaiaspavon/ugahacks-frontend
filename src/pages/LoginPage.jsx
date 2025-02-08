@@ -8,7 +8,7 @@ function LoginPage() {
   return (
     <div className="container">
       <div className="card">
-        <img className="logo" src={logo} alt="LOGO" width="100" height="100"></img>
+        <img className="logo" src={logo} alt="LOGO"></img>
         <h1 className="header-text">Sign In to WibeCheck</h1>
         <p className="subtext">Welcome back! Please sign in to continue.</p>
 
