@@ -11,7 +11,6 @@ function LoginPage() {
         <p className="subtext">Welcome back! Please sign in to continue.</p>
 
         <div className="auth-buttons">
-          <button className="auth-button">GitHub</button>
           <button className="auth-button">Google</button>
         </div>  
 
