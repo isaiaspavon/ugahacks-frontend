@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBarActivity from '../components/NavBarActivity';
+import styles from "./ActivityPage";
 
 const ActivityPage = () => {
     return (

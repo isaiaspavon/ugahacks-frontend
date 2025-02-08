@@ -6,8 +6,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #1e1e2e;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 60vh;
 }
 
@@ -120,6 +119,12 @@ i:after {
   border-color: #6d57ff;
 }
 
+.title{
+  margin-left: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
 .continue-button {
   width: 100%;
   max-width: 605px;
@@ -140,15 +145,49 @@ i:after {
 
 .firstButtons{
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  height: 50px;
 }
 
 .nextButtons{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
-.continue-button:hover {
+.contact{
+background-color: #1e1e2e;
+margin-left: 15px;
+font-size: small;
+}
+
+.about{
+margin-left: 15px;
+font-size: small;
+background-color: #1e1e2e;
+}
+
+.login{
+  background-color: #1e1e2e;
+  font-size: small;
+}
+.getStarted{
+  background-color:#6d57ff;
+  margin-left: 15px;
+  margin-right: 15px;  
+  font-size: small;
+  border-radius:15px;
+  stroke-width: 0%;
+
+}
+
+.test{
+  display: flex;
+  justify-content: space-between;
+}
+
+.continue-button:hover {  
   background-color: #5a43e0;
 }
 
@@ -206,10 +245,14 @@ i:after {
 }
 /* NAV stuff */
 .navBar{
-  background-color: rgb(41, 40, 40);
+  margin-top: 1px;
+  background-color: #1e1e2e;
+  outline: solid;
+  outline-width: 1px;
+  outline-color: black;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  display:flex;
-  flex-direction: row;
+
+  width: 1366px;
 }
 
 .logo{
@@ -222,4 +265,16 @@ nav a{
   color:white;
   margin: 0px;
   border: 10px solid rgb(41, 40, 40);
+}
+
+.bigInfo{
+  background-color: white;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  margin-top: 10px;
+  border-radius: 75px;
+  margin-left: 2%;
 }

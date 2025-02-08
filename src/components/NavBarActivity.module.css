@@ -1,0 +1,41 @@
+.navBar {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e2e;
+    color: white;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 10px;
+  }
+  
+  .companyName {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .rightSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profilePic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray; /* Placeholder for profile pic */
+  }
+  
+  .userGreeting {
+    font-size: 18px;
+  }
+  
