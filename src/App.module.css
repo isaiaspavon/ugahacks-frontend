@@ -124,6 +124,7 @@ i:after {
   font-weight: bold;
 }
 
+/*
 .continue-button {
   width: 100%;
   max-width: 605px;
@@ -133,7 +134,7 @@ i:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: red;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Istok Web', sans-serif;
@@ -141,12 +142,30 @@ i:after {
   margin-top: 10px;
   transition: background-color 0.3s ease;
 }
+  */
 
-.firstButtons{
+/* Gradient Animation */
+/* ALSO IMPORTANT ASF */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* INCREDIBLY IMPORTANT */
+.nameOfApp {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 50px;
+  color: #0AFDF7;
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(90deg, #0AFDF7, #FC08FD, #0AFDF7);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
 }
 
 .nextButtons{
@@ -186,9 +205,11 @@ background-color: #1e1e2e;
   justify-content: space-between;
 }
 
+/*
 .continue-button:hover {  
   background-color: #5a43e0;
 }
+*/
 
 .no-account {
   width: 100%;
@@ -271,37 +292,31 @@ nav a{
   height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   width: 96%;
   margin-top: 10px;
   border-radius: 75px;
   margin-left: 2%;
 }
 
-.activityButton {
+.bigInfoTitle {
+  margin-left: 2%;
+}
 
-  /*background: linear-gradient(to right, #0AFDF7, #FC08FD);*/
+.activityButton {
+  display: flex;
+  justify-content: row;
   background: #00e0dc;
-  color: white;
+  color: whitesmoke;
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
-  align-items: start;
-  /*
-  background-color: #6d57ff;
-  border-radius: 15px;
-  color: red ;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  */
+  margin-left: 2%;
+  /*margin-left: 25%;*/
 }
 
 .activityButton:hover {
   background-color: #00b5b5;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
