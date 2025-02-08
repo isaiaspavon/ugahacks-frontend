@@ -409,3 +409,10 @@ nav a{
   white-space: wrap;
 }
 
+.about, .contact {
+  color: white !important; /* Ensures text remains white */
+  display: inline-block; /* Ensures visibility */
+  padding: 10px 15px; /* Ensures clickable area */
+  font-size: large; /* Keeps them readable */
+  background-color: transparent; /* Ensures they don't blend with the background */
+}
