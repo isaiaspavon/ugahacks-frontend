@@ -66,7 +66,7 @@ const ActivityPage = () => {
                         {/* Analyze Button (Now Outside the Box) */}
                         <button
                             className={styles.analyzeButton}
-                            onClick={() => navigate("/")}
+                            onClick={() => navigate("/post-analysis")}
                         >
                             Analyze
                         </button>
