@@ -43,6 +43,10 @@ npm install mongodb
 npm install mongoose
 ```
 
+```
+npm install next
+```
+
 ## Coding Workflow
 
 To begin coding and make changes onto the project:
