@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 .navBar {
@@ -19,4 +19,95 @@ body {
     justify-content: space-between; /* Adjusts content alignment */
     padding: 0 20px; /* Adds some spacing on the sides */
     box-sizing: border-box;
+}
+
+
+.gradientText {
+    background: linear-gradient(to right, #0AFDF7, #FC08FD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Ensures text renders correctly */
+    font-weight: 900; /* Make it bold */
+    font-size: 3rem; /* Increase size */
+    margin-bottom: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.questionBox {
+    margin-top: 100px;
+    width: 96vw;  /* Ensures it spans the entire viewport width */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 50px;
+    margin-left: 2vw;
+    margin-bottom: 10px;
+    margin-right: 2vw;
+    background-color: #363E51;
+    display: flex; /* Centers content inside */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.wibeButton{
+    background-color: white;
+    color:black;
+    outline: solid;
+    outline-color: black;
+    outline-width: 2px;
+    width: 50%;
+    margin-bottom: 15px
+}
+
+.page {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    min-height: 100vh; /* Ensures it grows beyond viewport */
+    width: 100vw;
+    overflow-y: auto; /* Allows scrolling */
+}
+
+.imagePart{
+    width: 85vw;
+    margin-bottom: 20px;
+    height:35vw;
+    background-color: white;
+    display: none; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imageWords{
+    color:black;
+}
+
+/* When visible, fade in */
+.imagePart.show {
+    display: block;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.homeButton {
+    display: block;  /* Makes it a block element */
+    margin: 20px auto;  /* Centers it horizontally */
+    padding: 10px 20px;
+    width:50%;
+    font-size: 1.2rem;
+    background-color: #0AFDF7;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
