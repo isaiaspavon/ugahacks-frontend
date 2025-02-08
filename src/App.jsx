@@ -30,8 +30,8 @@ function Home() {
   </div>
 
 
-    <div className = {styles.bigInfo}>
-    <button onClick={() => navigate('/activity')}>Activity Page</button>
+  <div className = {styles.bigInfo}>
+    <button className = {styles.activityButton} onClick={() => navigate('/activity')}>Activity Page</button>
   </div> 
   </>
   );
