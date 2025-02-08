@@ -10,11 +10,7 @@ function Home() {
   return (
     <div>
       <button onClick={() => navigate('/signup')}>Go to Signup</button>
-    </div>
-  );
-  return (
-    <div>
-      <button onClick={() => navigate('/login')}>Go to Signup</button>
+      <button onClick={() => navigate('/login')}>Go to Login</button>
   </div> 
   );
 }
