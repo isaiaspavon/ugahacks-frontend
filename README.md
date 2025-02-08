@@ -35,6 +35,14 @@ npx auth secret
 ```
 -->
 
+```
+npm install mongodb
+```
+
+```
+npm install mongoose
+```
+
 ## Coding Workflow
 
 To begin coding and make changes onto the project:
