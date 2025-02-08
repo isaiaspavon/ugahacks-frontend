@@ -1,13 +1,13 @@
 import React from 'react';
 import NavBarActivity from '../components/NavBarActivity';
-import styles from "./ActivityPage.module.css";
+import styles from './ActivityPage.module.css';
 
 const ActivityPage = () => {
     return (
-      <div className="flex flex-col min-h-screen bg-gray-100">
+      <div className = {styles.navBar}>
         {/* Navbar */}
         <NavBarActivity />
-  
+      
         {/* Main Content */}
         <div className="flex-grow p-6">
           <h1 className="text-3xl font-bold text-center">Welcome to the Activity Page</h1>

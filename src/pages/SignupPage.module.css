@@ -8,6 +8,10 @@
     padding: 20px;
   }
   
+.backButton{
+  background-color: #f4f4f4;
+}
+
   /* Card Styling */
   .card {
     max-width: 560px;

@@ -9,7 +9,7 @@ const navigate = useNavigate();
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <button classNameonClick={() => navigate('/')}>
+        <button className = {styles.logo} onClick={() => navigate('/')}>
         <img className={styles.logo} src={logo} alt="LOGO" width="100" height="100"></img>
         </button>
         <h1 className={styles.headerText}>Create Your Account</h1>
