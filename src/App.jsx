@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import SignupPage from './pages/SignupPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
-import "./App.css"
+import styles from "./App.module.css";
+import logo from "./assets/LOGO for WibeCheck.jpg";
 
 function Home() {
   const navigate = useNavigate();
@@ -26,6 +27,7 @@ function Home() {
       <button onClick={() => navigate('/signup')}>Go to Signup</button>
       <button onClick={() => navigate('/login')}>Go to Login</button>
   </div> 
+  </>
   );
 }
 
@@ -41,4 +43,4 @@ function App() {
     </Router>
   );
 }
-export default App
+export default App;
