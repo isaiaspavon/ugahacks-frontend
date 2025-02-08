@@ -29,6 +29,7 @@ body {
     display: inline-block; /* Ensures text renders correctly */
     font-weight: 900; /* Make it bold */
     font-size: 3rem; /* Increase size */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
     margin-top: 15px;
     text-align: center;
@@ -40,6 +41,7 @@ body {
     height: 200px; /* Adjust height as needed */
     border-radius: 50px;
     margin-left: 2vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
     margin-right: 2vw;
     background-color: #363E51;
@@ -54,6 +56,7 @@ body {
     background-color: white;
     color:black;
     outline: solid;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     outline-color: black;
     outline-width: 2px;
     width: 50%;
@@ -77,6 +80,7 @@ body {
     background-color: white;
     display: none; /* Hidden by default */
     opacity: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: opacity 0.5s ease-in-out;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -99,6 +103,7 @@ body {
 .imagePart::before {
     content: "";
     position: absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     top: -5px; left: -5px; right: -5px; bottom: -5px;
     background: linear-gradient(to right, #0AFDF7, #FC08FD);
     z-index: -1;
@@ -113,6 +118,7 @@ body {
 .imagePart.show {
     display: block;
     display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
     justify-content: center;
@@ -127,6 +133,7 @@ body {
     font-size: 1.2rem;
     background-color: #0AFDF7;
     color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
     border-radius: 30px;
     cursor: pointer;

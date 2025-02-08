@@ -17,6 +17,7 @@
     max-width: 560px;
     height: auto;
     padding: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     border-radius: 20px;
     display: flex;
@@ -30,6 +31,7 @@
   .headerText {
     color: #4d4d4d;
     font-size: 32px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     margin-bottom: 0px;
     text-align: center;
@@ -39,6 +41,7 @@
     color: #717171;
     font-size: 18px;
     margin-top: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
   }
   
@@ -60,6 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -86,6 +90,7 @@
   
   .orText {
     font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: #4d4d4d;
   }
@@ -106,6 +111,7 @@
   
   .inputLabel {
     font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #4d4d4d;
     margin-bottom: 5px;
   }
@@ -118,6 +124,7 @@
     border: 1px solid #ccc;
     padding: 10px;
     font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     outline: none;
   }
   
@@ -131,6 +138,7 @@
   }
   
   .emailLabel {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     color: #4d4d4d;
     margin-bottom: 5px;
@@ -145,6 +153,7 @@
     padding: 10px;
     font-size: 16px;
     outline: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .emailInput:focus {
@@ -161,6 +170,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -181,6 +191,7 @@
   
   .noAccountText {
     font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: black;
   }
