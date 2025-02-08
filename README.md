@@ -43,6 +43,10 @@ npm install mongodb
 npm install mongoose
 ```
 
+```
+npm install next
+```
+
 ## Coding Workflow
 
 To begin coding and make changes onto the project:
@@ -94,6 +98,10 @@ Finally push your changes:
 $ git push origin main
 ```
 
+How to install React Router Dom
+```
+$ npm install react-router-dom 
+```
 
 
 
