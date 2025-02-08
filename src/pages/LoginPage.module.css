@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #1e1e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    height: 550px !important;
+    width: 350px;
+    padding: 25px 20px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .header-text {
+    color: #4d4d4d;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .subtext {
+    color: #717171;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+
+  }
+  
+  .auth-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 80%;
+    max-width: 300px;
+    height: 45px !important;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .hr-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .hr-container hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .or-text {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4d4d4d;
+  }
+  
+  .email-container {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .email-label {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #4d4d4d;
+    margin-bottom: 5px;
+  }
+  
+  .email-input {
+    width: 100% !important;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .email-input:focus {
+    border-color: #6d57ff;
+  }
+  
+  .continue-button {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    background-color: #6d57ff;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Istok Web', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .continue-button:hover {
+    background-color: #5a43e0;
+  }
+  
+  .no-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .no-account-text {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Istok Web', sans-serif;
+    color: black;
+  }
+  
+  .create-one {
+    color: #6d57ff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    display: inline;
+  }
+  
+  .create-one:hover {
+    color: #0600cc;
+  }
+
+  
