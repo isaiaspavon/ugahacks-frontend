@@ -1,0 +1,75 @@
+/* General Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e2e;
+}
+
+.card {
+    background-color: #9b83a3;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.highlight {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.spotifyCode {
+    margin-top: 20px;
+}
+
+.bars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.bar {
+    width: 8px;
+    height: 40px;
+    background-color: black;
+    border-radius: 3px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.spotifyIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.footerText {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

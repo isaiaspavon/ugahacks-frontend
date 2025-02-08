@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import SignupPage from './pages/SignupPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import ActivityPage from './pages/ActivityPage.jsx';
+import PostAnalysisPage from "./pages/PostAnalysisPage.jsx";
 import styles from "./App.module.css";
 import logo from "./assets/LOGO for WibeCheck.jpg";
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/activity" element={<ActivityPage />} />
+        <Route path="/post-analysis" element={<PostAnalysisPage />} />
       </Routes>
     </Router>
   );
