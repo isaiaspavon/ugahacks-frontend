@@ -39,6 +39,10 @@ function Home() {
       <button className = {styles.activityButton} onClick={() => navigate('/signup')}>Let's do it.</button>
     </div>
   </div> 
+
+  <div className = {styles.divForUserStats}>
+    <h1>What's up firulais</h1>
+  </div>
   </>
   );
 }
