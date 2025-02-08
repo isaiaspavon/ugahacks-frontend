@@ -11,7 +11,7 @@ function LoginPage() {
     <div className={styles.container}>
       <div className={styles.card}>
         <img className={styles.logo} src={logo} alt="LOGO"></img>
-        <h1 className={styles.header-text}>Sign In to WibeCheck</h1>
+        <h1 className={styles.headerText}>Sign In to WibeCheck</h1>
         <p className={styles.subtext}>Welcome back! Please sign in to continue.</p>
 
         <div className={styles.authButtons}>
@@ -34,7 +34,7 @@ function LoginPage() {
 
         <div className={styles.noAccount}>
           <span className={styles.noAccountText}>No Account?</span>
-          <button className={styles.createOne} onClick={() => navigate('/signup')}>Create One</button>
+          <span className={styles.createOne} onClick={() => window.location.href = '/signup'}>Create One</span>
         </div>
       </div>
     </div>
