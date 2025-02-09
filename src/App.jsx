@@ -8,7 +8,7 @@ import styles from "./App.module.css";
 import logo from "./assets/LOGO for WibeCheck.jpg";
 import ResultPage from "./pages/ResultPage.jsx"
 import ContactPage from "./pages/ContactPage.jsx";
-import AboutPage from "./page/AboutPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 
 function Home() {
   const navigate = useNavigate();
