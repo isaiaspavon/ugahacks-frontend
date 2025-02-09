@@ -20,8 +20,8 @@ body {
   }
   
   .card {
-    height: 650px !important;
-    width: 350px;
+    height: 700px !important;
+    width: 500px;
     padding: 25px 20px;
     background-color: #f4f4f4;
     border-radius: 20px;
@@ -38,7 +38,6 @@ body {
     font-weight: bold;
     font-family: 'Istok Web', sans-serif;
     text-align: center;
-    margin-bottom: 5px;
   }
   
   .subtext {
@@ -46,7 +45,6 @@ body {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     text-align: center;
-    margin-bottom: 15px;
   }
   
   .authButtons {
@@ -55,7 +53,6 @@ body {
     gap: 10px;
     width: 100%;
     align-items: center;
-
   }
   
   .authButton {
@@ -63,8 +60,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    width: 80%;
-    max-width: 300px;
+    width: 92%;
+    max-width: 325px;
     height: 45px !important;
     background-color: white;
     border: 1px solid #ccc;
@@ -84,6 +81,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    text-align: center;
     margin: 5px 0;
   }
   
@@ -102,24 +100,24 @@ body {
   
   .emailContainer {
     width: auto;
-    max-width: 300px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
   }
   
   .emailLabel {
     font-size: 14px;
     font-family: 'Inter', sans-serif;
+    font-weight: bold;
     color: #4d4d4d;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
   }
   
   .emailInput {
     min-width: 200px !important;
-    max-width: 250px !important;
-    width: 250px !important;
+    max-width: 500px !important;
+    width: 400px !important;
     height: 30px !important;
     background-color: white;
     border: 1px solid #ccc;
@@ -136,9 +134,10 @@ body {
   }
   
   .continueButton {
+    margin-top: 10px;
     width: 100%;
-    max-width: 280px;
-    height: 45px;
+    max-width: 420px;
+    height: 40px;
     background-color: #6d57ff;
     border-radius: 25px;
     color: white;

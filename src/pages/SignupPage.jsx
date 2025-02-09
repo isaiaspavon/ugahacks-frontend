@@ -10,7 +10,7 @@ function SignupPage() {
       <div className={styles.card}>
         {/* Logo */}
         <button className={styles.logo} onClick={() => navigate('/')}>
-          <img src={logo} alt="LOGO" width="100" height="100" />
+          <img src={logo} alt="LOGO" width="80" height="80" />
         </button>
 
         {/* Title */}
@@ -31,7 +31,7 @@ function SignupPage() {
         </div>
 
         {/* Name Inputs */}
-        <div className={styles.formColumn}>
+        <div className={styles.formRow}>
           <div className={styles.inputGroup}>
             <label htmlFor="firstName">First Name</label>
             <input type="text" id="firstName" placeholder="First Name" />
