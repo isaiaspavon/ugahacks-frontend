@@ -101,10 +101,12 @@ body {
   }
   
   .emailContainer {
-    width: 80%;
+    width: auto;
     max-width: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
   }
   
   .emailLabel {
@@ -115,15 +117,18 @@ body {
   }
   
   .emailInput {
-    width: 93% !important;
-    height: 25px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 14px;
+    min-width: 200px !important;
+    max-width: 250px !important;
+    width: 250px !important;
+    height: 30px !important;
     background-color: white;
-    outline: none;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 8px;
+    font-size: 14px;
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .emailInput:focus {
@@ -132,7 +137,7 @@ body {
   
   .continueButton {
     width: 100%;
-    max-width: 285px;
+    max-width: 280px;
     height: 45px;
     background-color: #6d57ff;
     border-radius: 25px;
