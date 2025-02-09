@@ -111,10 +111,6 @@ body {
     background-color: darkred;
   }
   
-  html, body {
-        padding-top: 60px; /* Adjust based on your navbar height */
-  }
-
   #root, #__next { /* If using Next.js */
     display: flex;
     justify-content: center;
