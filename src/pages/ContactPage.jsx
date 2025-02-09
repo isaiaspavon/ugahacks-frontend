@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ContactPage.module.css';
-import schoolLogo from "../assets/georgiaLogo.png";
+// import schoolLogo from "../assets/georgiaLogo.png";
+import friends from '../assets/friends.png';
 import { useNavigate } from 'react-router-dom';
 import logo from "../assets/LOGO for WibeCheck.jpg";
 
@@ -27,7 +28,7 @@ const ContactPage = () => {
         <div className={styles.contactUs}>
             <h1>Contact Us</h1>
             <div className={styles.specialName}>
-                <img src={schoolLogo} height="100" alt="UGA Logo" />
+                <img src={friends} height="100" alt="UGA Logo" />
                 <h2>University of Georgia</h2>
             </div>
 

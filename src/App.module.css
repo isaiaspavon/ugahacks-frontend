@@ -6,8 +6,8 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #1e1e2e;  
   align-items: flex-start;
-  min-height: 215vh;
-  /*min-height: fit-content;*/
+  /*min-height: 225vh;*/
+  min-height: fit-content;
 }
 
 .container {
@@ -213,6 +213,7 @@ background-color: white;
 }
 */
 
+/*
 .no-account {
   width: 100%;
   min-width: 100px;
@@ -230,6 +231,7 @@ background-color: white;
   font-family: 'Istok Web', sans-serif;
   color: black;
 }
+*/
 
 .create-one {
   color: #0800ff;
@@ -292,7 +294,7 @@ nav a{
 }
 
 .bigInfo{
-  background-color: white;
+  background-color: #efefef;
   height: 325px;
   display: flex;
   justify-content: center;
@@ -452,6 +454,7 @@ nav a{
   text-align: center;
   width: 350px;
   transition: transform 0.3s ease-in-out;
+  margin-top: 50px;
 }
 
 .card:hover {
@@ -484,4 +487,8 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+}
+
+.divForUserStats {
+  margin-bottom: 50px;
 }
