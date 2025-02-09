@@ -12,6 +12,7 @@ import AboutPage from "./pages/AboutPage.jsx";
 
 const InfoCard = ({ title, description, image }) => {
   return (
+    
     <div className={styles.card}>
       <img src={image} alt={title} className={styles.cardImage} />
       <h3 className={styles.cardTitle}>{title}</h3>
