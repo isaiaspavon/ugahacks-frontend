@@ -8,6 +8,14 @@
 
 
 .navBar{
+  margin-top: 1px;
+  background-color: #1e1e2e;
+  outline: solid;
+  outline-width: 1px;
+  outline-color: black;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 1366px;
+  /*
   background-color: #1e1e2e;
   outline: solid 1px black;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,6 +24,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  */
+  
 }
 
 .test {

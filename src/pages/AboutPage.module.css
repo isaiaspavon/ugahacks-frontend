@@ -126,8 +126,7 @@ background-color:rgb(30,30,46);
     justify-content: center;
     align-items: center;
     width: 80%;
-    background-color: #e2b3ff;
-    color: black;
+    background-color: #ff94f9;;
     text-align: center;
     border-radius: 30px;
     padding: 40x;
@@ -135,14 +134,23 @@ background-color:rgb(30,30,46);
     padding-top: 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
+.heroTitle {
+    margin-left: 5%;
+    color: white;
+    background-size: 200% 200%; 
+    height: 50px;
     font-weight: bold;
+}
+
+.heroSubtext {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .about {
@@ -191,6 +199,9 @@ background-color:rgb(30,30,46);
 
 
 .founders {
+    color: black;
+    font-weight: black;
+    font-size: 22px;    
     text-align: center;
     margin-top: 60px;
     margin-bottom: 30px;
@@ -204,7 +215,8 @@ background-color:rgb(30,30,46);
 
 .founders p {
     font-size: 1.2rem;
-    color: #b0b0b0;
+    font-weight: bold;
+    color: white;
 }
 
 .founderCards {
@@ -215,13 +227,13 @@ background-color:rgb(30,30,46);
 }
 
 .card {
-    background-color: white;
-    color: black;
+    background: #ff94f9;
     padding: 20px;
     border-radius: 12px;
     text-align: center;
     width: 220px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
 .founderImage {
