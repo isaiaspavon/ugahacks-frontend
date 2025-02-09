@@ -29,7 +29,7 @@ const ContactPage = () => {
             <h1>Contact Us</h1>
             <div className={styles.specialName}>
                 <img src={friends} height="100" alt="UGA Logo" />
-                <h2>University of Georgia</h2>
+                <h2>Questions? Let us know!</h2>
             </div>
 
             <hr />
