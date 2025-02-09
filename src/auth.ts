@@ -3,7 +3,7 @@ import NextAuth from "next-auth";
 
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
-import User from "./models/UserSchema";
+import { User } from "./models/UserSchema";
 import connectMongoDB from "./libs/mongodb";
 
 export const{
@@ -37,7 +37,7 @@ export const{
                         id: user._id.toString(),
                         email: user.email,
                         name: user.fName,
-
+                        gender: user.gender,
                       };
 
                     } else {
@@ -72,4 +72,5 @@ export const{
         return session;
       },
     },
+
 });

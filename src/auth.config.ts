@@ -1,4 +1,4 @@
-import { NextAuthConfig } from "next-auth";
+import NextAuth, { NextAuthOptions } from 'next-auth/index'
 
 export const authConfig: NextAuthConfig = {
     session:{
