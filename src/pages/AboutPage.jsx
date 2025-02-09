@@ -89,7 +89,7 @@ function AboutPage() {
                     <div className={styles.card}>
                         <img src={founder3} alt="Founder 3" className={styles.founderImage} />
                         <h4>Sarah Liberman</h4>
-                        <p>Cybersecurity enthusiast passionate about protecting user data and ethical hacking.</p>
+                        <p>Cybersecurity specialist focused on secure solutions, risk management, and threat detection.</p>
                     </div>  
                 </div>
             </section>
