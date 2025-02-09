@@ -11,7 +11,7 @@ export async function GET(request: Request) {
     
       const clientId = process.env.SPOTIFY_CLIENT_ID;
       const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-      const redirectUri = 'http://localhost:3000/api/spotify/exchange-token';
+      const redirectUri = 'http://localhost:5173/api/spotify/exchange-token';
     
       const authHeader = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
     

@@ -1,9 +1,81 @@
 import connectMongoDB from "../../../libs/mongodb";
+import { ObjectId } from "mongodb";
+import { NextResponse, NextRequest } from "next/server";
+import mongoose from "mongoose";
+import User from "../../../models/UserSchema";
+
+// Define route params interface
+interface RouteParams {
+    params: { id: string };
+}
+
+// GET a user by ID
+export async function GET(request: NextRequest, { params }: RouteParams) {
+    const { id } = params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return NextResponse.json({ message: "Invalid ID format" }, { status: 400 });
+    }
+
+    await connectMongoDB();
+    const user = await User.findById(id);
+
+    if (!user) {
+        return NextResponse.json({ message: "User not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ user }, { status: 200 });
+}
+
+// UPDATE a user by ID
+export async function PUT(request: NextRequest, { params }: RouteParams) {
+    const { id } = params;
+    const { fName, lName, email, password } = await request.json();
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return NextResponse.json({ message: "Invalid ID format" }, { status: 400 });
+    }
+
+    await connectMongoDB();
+    const updatedUser = await User.findByIdAndUpdate(
+        id,
+        { fName, lName, email, password },
+        { new: true } // Return the updated user
+    );
+
+    if (!updatedUser) {
+        return NextResponse.json({ message: "User not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ message: "User updated", user: updatedUser }, { status: 200 });
+}
+
+// DELETE a user by ID
+export async function DELETE(request: NextRequest, { params }: RouteParams) {
+    const { id } = params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return NextResponse.json({ message: "Invalid ID format" }, { status: 400 });
+    }
+
+    await connectMongoDB();
+    const deletedUser = await User.findByIdAndDelete(id);
+
+    if (!deletedUser) {
+        return NextResponse.json({ message: "User not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ message: "User deleted" }, { status: 200 });
+}
+
+
+/*
+import connectMongoDB from "../../../libs/mongodb";
 import { ObjectId } from 'mongodb';
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
 import mongoose from "mongoose";
-import User from "../../../models/userSchema";
+import User from "../../../models/UserSchema";
 
 // user id
 interface RouteParams {
@@ -50,3 +122,4 @@ export async function DELETE(request:NextRequest, { params }: RouteParams) {
 
     return NextResponse.json({ message: "Item deleted"}, { status: 200});
 }
+*/    
