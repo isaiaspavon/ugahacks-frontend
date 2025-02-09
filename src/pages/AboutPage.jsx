@@ -18,8 +18,7 @@ function AboutPage() {
                     <div className={styles.nameOfApp}>
                         <img className={styles.logo} src={logo} alt="LOGO"></img>
                         <h2 className = {styles.title}>WibeCheck</h2>
-                            <button className={styles.about} onClick={() => navigate('/about')}>About</button>
-                            <button>Contact</button>
+                            <button className={styles.about} onClick={() => navigate('/contact')}>Contact</button>
                     </div>
                     <div className={styles.nextButtons}>
                         <button className={styles.login} onClick={() => navigate('/login')}>Login</button>
