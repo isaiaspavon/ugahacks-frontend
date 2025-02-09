@@ -70,7 +70,7 @@ function Home() {
       <div className={styles.cardContainer}>
         <InfoCard 
           title="Analyze Your Mood" 
-          description="WibeCheck uses AI to analyze your mood and suggests music accordingly." 
+          description="WibeCheck uses Luxand API to analyze your mood and suggests music accordingly." 
           image="src/assets/moodAnalysis.png"
         />
         <InfoCard 
