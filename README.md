@@ -1,20 +1,18 @@
 ## Overview
 
-WibeCheck is a music recommendation app that analyzes facial expressions using an emotion-decetor API to detect emotions and generate a personalized playlist based on the detected mood. Each curated dataset suggests songs that match various emotions such as happy, sad, angry, neutral, and sleepy.
+WibeCheck is a music recommendation app that analyzes facial expressions using an emotion-detector API called Luxand to detect emotions and generate a personalized playlist based on the detected mood. Each curated dataset suggests songs that match various emotions such as happy, sad, angry, neutral, and sleepy.
 
 ## Tech Stack
 
-Backend: Python 3, Flask, MongoDB, *Emotion API*
-
 Frontend: React(Vite), JavaScript, css, HTML
 
-API & Tools: Axios, *Emotion API*
+API & Tools: Spotify API, Luxand (Emotion detection API)
 
 ## Features
 
-Facial Emotion Detection: Uses *Emotion API* to analyze expressions from an image
+Facial Emotion Detection: Uses Luxand to analyze expressions from an image and give a overall "mood"
 
-Mood-Based Playlist Generation: Matches detected emotions with appropriate songs
+Mood-Based Playlist Generation: Matches detected emotions with appropriate songs and displays in a grid structure
 
 Fast & INteractive UI: Built with React and optimizes for performance
 
