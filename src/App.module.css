@@ -6,7 +6,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #1e1e2e;  
   align-items: flex-start;
-  /*min-height: 150vh;*/
+  /*min-height: 225vh;*/
   min-height: fit-content;
 }
 
@@ -213,6 +213,7 @@ background-color: white;
 }
 */
 
+/*
 .no-account {
   width: 100%;
   min-width: 100px;
@@ -230,6 +231,7 @@ background-color: white;
   font-family: 'Istok Web', sans-serif;
   color: black;
 }
+*/
 
 .create-one {
   color: #0800ff;
@@ -292,7 +294,7 @@ nav a{
 }
 
 .bigInfo{
-  background-color: white;
+  background-color: #efefef;
   height: 325px;
   display: flex;
   justify-content: center;
@@ -412,6 +414,21 @@ nav a{
   white-space: wrap;
 }
 
+.activityButtonTwo {
+  background: #00e0dc;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 44.5%;
+  /*margin-left: 25%;*/
+}
+
+.activityButtonTwo:hover {
+  background-color: #FC08FD;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
 .about, .contact {
   color: white !important; /* Ensures text remains white */
   display: inline-block; /* Ensures visibility */
@@ -428,14 +445,16 @@ nav a{
   flex-wrap: wrap;
 }
 
+
 .card {
-  background: white;
+  background: #ff94f9;
   padding: 0px;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 350px;
   transition: transform 0.3s ease-in-out;
+  margin-top: 50px;
 }
 
 .card:hover {
@@ -443,20 +462,24 @@ nav a{
 }
 
 .cardImage {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .cardTitle {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: black;
 }
 
 .cardDescription {
   font-size: 14px;
-  color: #666;
+  font-weight: bold;
+  color: white;
 }
 
 html, body {
@@ -464,4 +487,8 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+}
+
+.divForUserStats {
+  margin-bottom: 50px;
 }

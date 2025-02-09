@@ -27,7 +27,7 @@ function AboutPage() {
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
                 setIsImageVisible(true);
             }, 500);
-        }, 5000);
+        }, 3000);
 
         return () => clearInterval(interval);
     }, []);
@@ -52,14 +52,14 @@ function AboutPage() {
 
             <section className={styles.hero}>
                 <div className={styles.heroText}>
-                    <h1 className={styles.heroTitle}>Welcome to WibeCheck</h1>
-                    <p className={styles.heroSubtext}>A platform that facially detects your emotions and gives you a playlist according to your wibes.</p>
+                    <h1 className={styles.heroTitle}>Thank you for using WibeCheck.</h1>
+                    <p className={styles.heroSubtext}>We really appreciate you for using our website WibeCheck! We couldn't have done this without you.</p>
                 </div>
             </section>
 
             <section className={styles.about}>
                 <h2>About Us</h2>
-                <p>Made for the UGA Hacks X.</p>
+                <p>Made for UGA Hacks X.</p>
             </section>
 
             <div class={styles.imageContainer}>
@@ -77,7 +77,7 @@ function AboutPage() {
                     <div className={styles.card}>
                         <img src={founder1} alt="Founder 1" className={styles.founderImage} />
                         <h4>Isaias Pavon</h4>
-                        <p>Specializes in AI and Machine Learning. Loves to work on facial recognition technology.</p>
+                        <p>Specializes in FullStack development. Loves to manage a team and aid in personal growth and development.</p>
                     </div>
 
                     <div className={styles.card}>
