@@ -138,10 +138,11 @@ body {
 
 /* Analyze Button */
 .analyzeButton {
-    display: block;
+    display: flex;
+    text-align: center;
     margin: 20px auto;
     padding: 10px 20px;
-    width: 50%;
+    width: 75%;
     font-size: 1.2rem;
     background-color: #0AFDF7;
     color: white;
@@ -149,6 +150,7 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-weight: bold;
 }
 
 /* Image Text */
