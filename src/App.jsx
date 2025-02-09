@@ -62,18 +62,18 @@ function Home() {
       <div className={styles.cardContainer}>
         <InfoCard 
           title="Analyze Your Mood" 
-          description="WibeCheck uses AI to analyze your mood and suggest music accordingly." 
-          image="/assets/moodAnalysis.png"
+          description="WibeCheck uses AI to analyze your mood and suggests music accordingly." 
+          image="src/assets/moodAnalysis.png"
         />
         <InfoCard 
           title="Create Playlists" 
           description="Get a customized playlist based on how you're feeling right now!" 
-          image="/assets/playlist.png"
+          image="src/assets/playlist.png"
         />
         <InfoCard 
           title="Track Your Stats" 
           description="Keep track of your listening habits and emotional trends over time." 
-          image="/assets/stats.png"
+          image="src/assets/stats.png"
         />
       </div>
 
@@ -81,6 +81,7 @@ function Home() {
         <h1 className={styles.headingForUserStats}>What's up, listeners?</h1>
         <p className={styles.displayParagraphForUserStats}>The Wibe is ready.</p>
         <p className={styles.bottomOfHeadingForUserStats}>Are you?</p>
+        <button className={styles.activityButtonTwo} onClick={() => navigate('/signup')}>Let's do it.</button>
       </div>
     </>
   );
