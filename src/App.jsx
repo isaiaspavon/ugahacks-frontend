@@ -4,6 +4,7 @@ import SignupPage from './pages/SignupPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import ActivityPage from './pages/ActivityPage.jsx';
 import PostAnalysisPage from "./pages/PostAnalysisPage.jsx";
+import UploadImage from "./pages/UploadImage.jsx";
 import styles from "./App.module.css";
 import logo from "./assets/LOGO for WibeCheck.jpg";
 import ResultPage from "./pages/ResultPage.jsx"
