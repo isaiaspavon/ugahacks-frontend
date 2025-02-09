@@ -54,7 +54,7 @@ function Home() {
         </h3>
         <div className={styles.activityButtonContainer}>
           <h3 className={styles.smallerInfoTitle}>Ready to get started?</h3>
-          <button className={styles.activityButton} onClick={() => navigate('/signup')}>Let's do it.</button>
+          <button className={styles.activityButton} onClick={() => navigate('/activity')}>Let's do it.</button>
         </div>
       </div>
 
