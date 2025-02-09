@@ -7,6 +7,8 @@ import PostAnalysisPage from "./pages/PostAnalysisPage.jsx";
 import styles from "./App.module.css";
 import logo from "./assets/LOGO for WibeCheck.jpg";
 import ResultPage from "./pages/ResultPage.jsx"
+import ContactPage from "./pages/ContactPage.jsx";
+import AboutPage from "./page/AboutPage.jsx";
 
 function Home() {
   const navigate = useNavigate();
@@ -19,8 +21,8 @@ function Home() {
         <div className={styles.nameOfApp}>
           <img className={styles.logo} src={logo} alt="LOGO" width="50" height="50"></img>
           <h2 className = {styles.title}>WibeCheck</h2>
-          <button className={styles.about}>About</button>
-          <button className={styles.contact}>Contact</button>
+          <button className={styles.about}onClick={() => navigate('/about')}>About</button>
+          <button className={styles.contact} onClick={() => navigate('/contact')}>Contact</button>
         </div>
         <div className={styles.nextButtons}>
           <button className={styles.login} onClick={() => navigate('/login')}>Login</button>
@@ -60,6 +62,8 @@ function App() {
         <Route path="/activity" element={<ActivityPage />} />
         <Route path="/post-analysis" element={<PostAnalysisPage />} />
         <Route path ="/result" element={<ResultPage />} />
+        <Route path ="/contact" element={<ContactPage />} />
+        <Route path ="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   );

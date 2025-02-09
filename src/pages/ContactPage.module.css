@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: rgba(30, 30, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contactUs {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    min-width: fit-content;
+  }
+  
+  .contactUs p {
+    font-size: 16px;
+    color:black
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background-color: maroon;
+    margin: 20px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  h1{
+    color:black;
+
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit {
+    background-color: maroon;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit:hover {
+    background-color: darkred;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+
+  #root, #__next { /* If using Next.js */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .specialName{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:15px;
+    justify-content: center;
+  }
