@@ -13,7 +13,7 @@ const ContactPage = () => {
 
             <hr />
 
-            <form action="https://formsubmit.co/e79a2dd7264691405f64e874d62ceb6a" method="POST">
+            <form action="https://formsubmit.co/jtc55494@uga.edu" method="POST"/>
                 <label htmlFor="fname">Name:</label>
                 <input type="text" id="fname" name="fname" required />
 
@@ -24,7 +24,6 @@ const ContactPage = () => {
                 <textarea id="theMessage" name="message" required></textarea>
 
                 <button type="submit" className={styles.submit}>Send</button>
-            </form>
         </div>
     );
 };
