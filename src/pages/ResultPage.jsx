@@ -69,7 +69,11 @@ const ResultPage = () => {
                 </div>
 
                 <div className={styles.manyButtons}>
+<<<<<<< Updated upstream
                     <button className={styles.create} onClick={() => navigate('/api/login')}>Create Playlist</button>
+=======
+                    <button className={styles.create} onClick={() => window.Location.href = 'http://localhost:5000/api/login'}>Create Playlist</button>
+>>>>>>> Stashed changes
                     <button className={styles.shuffle} onClick={shuffleSongs}>Shuffle</button>
                     <button className={styles.again} onClick={() => navigate('/activity')}>Again</button>
                 </div>
