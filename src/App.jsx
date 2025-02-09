@@ -81,7 +81,7 @@ function Home() {
         <h1 className={styles.headingForUserStats}>What's up, listeners?</h1>
         <p className={styles.displayParagraphForUserStats}>The Wibe is ready.</p>
         <p className={styles.bottomOfHeadingForUserStats}>Are you?</p>
-        <button className={styles.activityButtonTwo} onClick={() => navigate('/signup')}>Let's do it.</button>
+        <button className={styles.activityButtonTwo} onClick={() => navigate('/activity')}>Let's do it.</button>
       </div>
     </>
   );
