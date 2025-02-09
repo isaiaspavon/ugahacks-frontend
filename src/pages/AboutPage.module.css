@@ -4,7 +4,16 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
+
+.logoButton{
+background-color:rgb(30,30,46);
+}
+
 
 .container {
     background-color: #121221;
@@ -46,7 +55,7 @@ body {
 }
   
 .logo {
-    height: 45px;
+    height: 50x;
     width: auto;
 }
   
@@ -151,9 +160,39 @@ body {
     color: #b0b0b0;
 }
 
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.backgroundImg {
+    width: 100% !important;
+    max-width: 700px !important;
+    height: 700px !important;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: block;
+    border: 1px solid white;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.backgroundImg.active {
+    opacity: 1;
+}
+
+
 .founders {
     text-align: center;
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .founders h3 {
