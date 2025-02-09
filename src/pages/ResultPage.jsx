@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import styles from './ResultPage.module.css';
-import logo from '../assets/LOGO for WibeCheck.jpg';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import styles from "./ResultPage.module.css";
+import logo from "../assets/LOGO for WibeCheck.jpg";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const ResultPage = () => {
     const navigate = useNavigate();
-    const userMood = "Sleepy"; // Replace with actual database value
+    const location = useLocation();
+    const { userMood, imageId, apiData } = location.state || { userMood: "Neutral", imageId: null, apiData: null };
 
-    // Define mood-based colors
     const moodColors = {
         Happy: { text: "#FFD700", background: "#FFD700" },
         Sad: { text: "#4682B4", background: "#4682B4" },
@@ -16,10 +16,8 @@ const ResultPage = () => {
         Sleepy: { text: "#800080", background: "#800080" },
     };
 
-    // Get colors or default to Neutral
     const { text, background } = moodColors[userMood] || moodColors.Neutral;
 
-    // Initial song list
     const initialResults = [
         { id: 1, name: "Song 1", image: "https://via.placeholder.com/150" },
         { id: 2, name: "Song 2", image: "https://via.placeholder.com/150" },
@@ -35,10 +33,8 @@ const ResultPage = () => {
         { id: 12, name: "Song 12", image: "https://via.placeholder.com/150" },
     ];
 
-    // State to manage the shuffled song list
     const [results, setResults] = useState(initialResults);
 
-    // Shuffle function using Fisher-Yates algorithm
     const shuffleSongs = () => {
         let shuffled = [...results];
         for (let i = shuffled.length - 1; i > 0; i--) {
@@ -51,7 +47,6 @@ const ResultPage = () => {
     return (
         <div className={styles.page} style={{ backgroundColor: background }}>
             <div className={styles.yourMood}>
-                {/* Mood Header with Dynamic Text Color */}
                 <div className={styles.moodHeader}>
                     <h2 className={styles.title}>Your Mood:</h2>
                     <p className={styles.moodText} style={{ color: text }}>{userMood}</p>
