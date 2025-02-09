@@ -6,6 +6,11 @@ body {
     height: 100vh;
 }
 
+.logoButton{
+background-color:rgb(30,30,46);
+}
+
+
 .container {
     background-color: #121221;
     padding-top: 20px;
@@ -46,7 +51,7 @@ body {
 }
   
 .logo {
-    height: 45px;
+    height: 50x;
     width: auto;
 }
   

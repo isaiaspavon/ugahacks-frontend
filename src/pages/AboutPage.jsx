@@ -16,7 +16,9 @@ function AboutPage() {
             <div className={styles.navBar}>
                 <div className={styles.test}>
                     <div className={styles.nameOfApp}>
-                        <img className={styles.logo} src={logo} alt="LOGO"></img>
+                        <button className={styles.logoButton} onClick={() => navigate('/')}>
+                        <img className={styles.logo} src={logo} alt="LOGO" height="50" width="50"></img>
+                        </button>
                         <h2 className = {styles.title}>WibeCheck</h2>
                             <button className={styles.about} onClick={() => navigate('/contact')}>Contact</button>
                     </div>

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Global Styles */
 body {
   margin: 0;
@@ -203,6 +209,7 @@ background-color: white;
 
 .test{
   display: flex;
+  min-height: 75;
   justify-content: space-between;
 }
 
@@ -277,7 +284,9 @@ background-color: white;
 }
 
 .logo{
-  order:0 
+  order:0;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 
@@ -415,4 +424,43 @@ nav a{
   padding: 10px 15px; /* Ensures clickable area */
   font-size: large; /* Keeps them readable */
   background-color: transparent; /* Ensures they don't blend with the background */
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardImage {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 14px;
+  color: #666;
 }
