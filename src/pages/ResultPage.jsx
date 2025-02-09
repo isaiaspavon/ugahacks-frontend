@@ -69,7 +69,7 @@ const ResultPage = () => {
                 </div>
 
                 <div className={styles.manyButtons}>
-                    <button className={styles.create} onClick={() => window.location.href = 'http://localhost:5000/api/login'}>Create Playlist</button>
+                    <button className={styles.create} onClick={() => window.location.replace('http://localhost:5000/api/login')}>Create Playlist</button>
                     <button className={styles.shuffle} onClick={shuffleSongs}>Shuffle</button>
                     <button className={styles.again} onClick={() => navigate('/activity')}>Again</button>
                 </div>
