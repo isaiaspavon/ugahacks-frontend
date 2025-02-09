@@ -1,12 +1,86 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./ResultPage.module.css";
 import logo from "../assets/LOGO for WibeCheck.jpg";
 import { useNavigate, useLocation } from "react-router-dom";
 
+const CLIENT_ID = "43360e6c088849989509efdad67f7f2e";
+const CLIENT_SECRET = "fb1c2fc04ef14d4cb72b64ac4bba2169";
+const REDIRECT_URI = "http://localhost:5173/result";
+const SCOPES = encodeURIComponent("user-read-private user-read-email playlist-read-private");
+
+const getAccessToken = async () => {
+    try {
+        const response = await fetch("https://accounts.spotify.com/api/token", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+                Authorization: "Basic " + btoa(`${CLIENT_ID}:${CLIENT_SECRET}`),
+            },
+            body: "grant_type=client_credentials",
+        });
+
+        const data = await response.json();
+        if (!response.ok) throw new Error(`Error ${response.status}: ${data.error_description}`);
+        return data.access_token;
+    } catch (error) {
+        console.error("Failed to get access token:", error);
+        return null;
+    }
+};
+
+const fetchSongsForMood = async (mood) => {
+    const token = await getAccessToken();
+    if (!token) return [];
+
+    try {
+        // Search for a playlist related to the mood
+        const searchResponse = await fetch(
+            `https://api.spotify.com/v1/search?q=${encodeURIComponent(mood)}&type=playlist&limit=1`,
+            {
+                headers: { Authorization: `Bearer ${token}` },
+            }
+        );
+
+        const searchData = await searchResponse.json();
+        if (!searchData.playlists || searchData.playlists.items.length === 0) {
+            console.error("No playlist found for mood:", mood);
+            return [];
+        }
+
+        const playlistId = searchData.playlists.items[0].id;
+
+        // Get songs from the selected playlist
+        const tracksResponse = await fetch(
+            `https://api.spotify.com/v1/playlists/${playlistId}/tracks?limit=12`,
+            {
+                headers: { Authorization: `Bearer ${token}` },
+            }
+        );
+
+        const tracksData = await tracksResponse.json();
+        if (!tracksData.items) {
+            console.error("No tracks found in playlist:", playlistId);
+            return [];
+        }
+
+        return tracksData.items
+            .filter((item) => item.track) // Ensure we only process valid tracks
+            .slice(0, 12) // Limit to 12 songs
+            .map((item) => ({
+                id: item.track.id,
+                name: item.track.name,
+                image: item.track.album.images[0]?.url || logo, // Use album cover or fallback to default logo
+            }));
+    } catch (error) {
+        console.error("Error fetching songs:", error);
+        return [];
+    }
+};
+
 const ResultPage = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { userMood, imageId, apiData } = location.state || { userMood: "Neutral", imageId: null, apiData: null };
+    const { userMood } = location.state || { userMood: "Neutral" };
 
     const moodColors = {
         Happy: { text: "#FFD700", background: "#FFD700" },
@@ -17,31 +91,18 @@ const ResultPage = () => {
     };
 
     const { text, background } = moodColors[userMood] || moodColors.Neutral;
+    const [results, setResults] = useState([]);
 
-    const initialResults = [
-        { id: 1, name: "Song 1", image: "https://via.placeholder.com/150" },
-        { id: 2, name: "Song 2", image: "https://via.placeholder.com/150" },
-        { id: 3, name: "Song 3", image: "https://via.placeholder.com/150" },
-        { id: 4, name: "Song 4", image: "https://via.placeholder.com/150" },
-        { id: 5, name: "Song 5", image: "https://via.placeholder.com/150" },
-        { id: 6, name: "Song 6", image: "https://via.placeholder.com/150" },
-        { id: 7, name: "Song 7", image: "https://via.placeholder.com/150" },
-        { id: 8, name: "Song 8", image: "https://via.placeholder.com/150" },
-        { id: 9, name: "Song 9", image: "https://via.placeholder.com/150" },
-        { id: 10, name: "Song 10", image: "https://via.placeholder.com/150" },
-        { id: 11, name: "Song 11", image: "https://via.placeholder.com/150" },
-        { id: 12, name: "Song 12", image: "https://via.placeholder.com/150" },
-    ];
-
-    const [results, setResults] = useState(initialResults);
+    useEffect(() => {
+        const loadSongs = async () => {
+            const songs = await fetchSongsForMood(userMood);
+            setResults(songs);
+        };
+        loadSongs();
+    }, [userMood]);
 
     const shuffleSongs = () => {
-        let shuffled = [...results];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        setResults(shuffled);
+        setResults((prev) => [...prev.sort(() => Math.random() - 0.5)]);
     };
 
     return (
@@ -57,14 +118,19 @@ const ResultPage = () => {
                 <div className={styles.resultsGrid}>
                     {results.map((item) => (
                         <div key={item.id} className={styles.gridItem}>
-                            <img src={logo} alt={item.name} className={styles.songImage} />
+                            <img src={item.image} alt={item.name} className={styles.songImage} />
                             <p className={styles.songLabel}>{item.name}</p>
                         </div>
                     ))}
                 </div>
 
                 <div className={styles.manyButtons}>
-                    <button className={styles.create} onClick={() => window.location.replace('http://localhost:5000/api/login')}>Create Playlist</button>
+                    <button className={styles.create} onClick={async () => {
+                        const authUrl = `https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&scope=${SCOPES}`;
+                        window.location.href = authUrl;
+                    }}>
+                        Create Playlist
+                    </button>
                     <button className={styles.shuffle} onClick={shuffleSongs}>Shuffle</button>
                     <button className={styles.again} onClick={() => navigate('/activity')}>Again</button>
                 </div>
