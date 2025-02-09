@@ -1,4 +1,3 @@
-/*
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './SignupPage.module.css'; // Import CSS module
@@ -25,10 +24,8 @@ const navigate = useNavigate();
           <span className={styles.orText}>or</span>
           <hr />
         </div>
-*/
-        {/* First Name and Last Name Inputs */}
 
-/*      
+        {/* First Name and Last Name Inputs */}
         <div className={styles.nameContainer}>
           <div className={styles.inputGroup}>
             <label htmlFor="firstName" className={styles.inputLabel}>First Name</label>
@@ -40,21 +37,13 @@ const navigate = useNavigate();
           </div>
         </div>
 
-*/        
-
         {/* Email Input */}
-
-/*        
         <div className={styles.emailContainer}>
           <label htmlFor="email" className={styles.emailLabel}>Email Address</label>
           <input type="email" id="email" className={styles.emailInput} placeholder="Enter your email" />
         </div>
 
-*/        
-
         {/* Password Input */}
-
-/*        
         <div className={styles.emailContainer}>
           <label htmlFor="password" className={styles.emailLabel}>Password</label>
           <input type="password" id="password" className={styles.emailInput} placeholder="Enter your password" />
@@ -73,4 +62,3 @@ const navigate = useNavigate();
 }
 
 export default SignupPage;
-*/

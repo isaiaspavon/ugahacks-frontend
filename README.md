@@ -59,14 +59,6 @@ npm install next-auth axios
 npm install qs
 ```
 
-```
-npm install next-auth @auth/mongodb-adapter mongodb
-```
-
-```
-npm install bcryptjs
-```
-
 ## Coding Workflow
 
 To begin coding and make changes onto the project:

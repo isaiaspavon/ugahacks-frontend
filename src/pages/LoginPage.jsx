@@ -1,4 +1,3 @@
-/*
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './LoginPage.module.css'; // Import CSS module
@@ -25,17 +24,13 @@ function LoginPage() {
           <hr />
         </div>
 
-*/        
         {/* Email Input */}
-        /*
         <div className={styles.emailContainer}>
           <label htmlFor="email" className={styles.emailLabel}>Email Address</label>
           <input type="email" id="email" className={styles.emailInput} placeholder="Enter your email address" />
         </div>
-        */
 
         {/* Password Input */}
-        /*
         <div className={styles.emailContainer}>
           <label htmlFor="password" className={styles.emailLabel}>Password</label>
           <input type="password" id="password" className={styles.emailInput} placeholder="Enter your password" />
@@ -53,4 +48,3 @@ function LoginPage() {
 }
 
 export default LoginPage;
-*/
