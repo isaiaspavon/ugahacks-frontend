@@ -8,18 +8,20 @@ body {
 /* Navigation Bar */
 .navBar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
+    /*top: 0;*/
+    /*left: 0;*/
+    height: 85px;
     background-color: #1e1e2e;
-    outline: 1px solid black;
+    /*outline: 1px solid black; /* Possible issue with navBar */
     z-index: 1000; /* Ensures navbar stays on top */
+    border: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    /*padding: 0 20px; /* Problem with NavBar */
     box-sizing: border-box;
+    width: 5000px;
+    /*Use a width cause it won't reach*/
 }
 
 .background {

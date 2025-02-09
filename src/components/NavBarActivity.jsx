@@ -17,11 +17,6 @@ function NavBar() {
                         <button className={styles.about} onClick={() => navigate('/about')}>About</button>
                         <button className={styles.about} onClick={() => navigate('/contact')}>Contact</button>
                     </div>
-
-                    <div className={styles.nextButtons}>
-                          <button className={styles.login} onClick={() => navigate('/login')}>Login</button>
-                          <button className={styles.getStarted} onClick={() => navigate('/signup')}>Get Started</button>
-                   </div>
                 </div>
             </div>
 
