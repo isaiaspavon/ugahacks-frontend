@@ -1,6 +1,6 @@
 ## Overview
 
-Wibe Check is a music recommendation app that analyzes facial expressions using an emotion-decetor API to detect emotions and generate a personalized playlist based on the detected mood. Eahc curated dataset suggests songs that match various emotions such as happy, sad, angry, neutral, and sleepy.
+WibeCheck is a music recommendation app that analyzes facial expressions using an emotion-decetor API to detect emotions and generate a personalized playlist based on the detected mood. Each curated dataset suggests songs that match various emotions such as happy, sad, angry, neutral, and sleepy.
 
 ## Tech Stack
 
