@@ -52,7 +52,11 @@ npm install react-router-dom
 ```
 
 ```
-npm install next-auth
+npm install next-auth axios
+```
+
+```
+npm install qs
 ```
 
 ## Coding Workflow
