@@ -1,19 +1,25 @@
 import styles from './NavBarActivity.module.css';
 import logo from '../assets/LOGO for WibeCheck.jpg';
+import { useNavigate } from 'react-router-dom';
 
 function NavBar() {
+  const navigate = useNavigate();
+
   return (
     <>
-    <nav className={styles.navBar}> 
-      <div className={styles.leftSection}>
-        <img className={styles.logo} src={logo} alt="Company Logo" width="40" height="40" />
-        <h2 className={styles.companyName}>WibeCheck</h2>
-      </div>
-      <div className={styles.rightSection}>
-        <div className={styles.profilePic}></div>
-        <span className={styles.userGreeting}>Hello, User</span>
-      </div>
-    </nav>
+            <div className={styles.navBar}>
+                <div className={styles.test}>
+                    <div className={styles.nameOfApp}>
+                        <button className={styles.logoButton} onClick={() => navigate('/')}>
+                        <img className={styles.logoButton} src={logo} alt="LOGO" width="50" height="50"></img>
+                        </button>
+                        <h2 className = {styles.title}>WibeCheck</h2>
+                        <button className={styles.about} onClick={() => navigate('/about')}>About</button>
+                        <button className={styles.about} onClick={() => navigate('/contact')}>Contact</button>
+                    </div>
+                </div>
+             </div>
+
     </>
   );
 }

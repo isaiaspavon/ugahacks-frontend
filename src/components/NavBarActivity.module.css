@@ -1,42 +1,75 @@
-.navBar {
-    min-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+.specialName{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+  justify-content: center;
+}
+
+
+.navBar{
+  background-color: #1e1e2e;
+  outline: solid 1px black;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.test {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 5px;
+}
+
+.nameOfApp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logoButton{
+  background-color:rgb(30,30,46);
+  }
+
+  .login, .getStarted {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+  }
+  
+  .login {
+      background-color: gray;
+      color: white;
+      margin-right: 15px;
+  }
+  
+  .getStarted {
+      background-color: #6d57ff;
+      color: white;
+  }
+  
+  .contact{
     background-color: #1e1e2e;
-    color: white;
-  }
-  
-  .leftSection {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    margin-right: 10px;
-  }
-  
-  .companyName {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .rightSection {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .profilePic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: gray; /* Placeholder for profile pic */
-  }
-  
-  .userGreeting {
-    font-size: 18px;
-    margin-right: 20px;
-  }
-  
+    margin-left: 15px;
+    font-size: small;
+    }

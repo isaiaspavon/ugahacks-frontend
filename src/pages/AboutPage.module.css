@@ -153,6 +153,7 @@ background-color:rgb(30,30,46);
 .about h2 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: white;
 }
 
 .about p {
@@ -195,9 +196,10 @@ background-color:rgb(30,30,46);
     margin-bottom: 30px;
 }
 
-.founders h3 {
+.founders h2 {
     font-size: 2rem;
     font-weight: bold;
+    color: white;
 }
 
 .founders p {
