@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './AboutPage.module.css'; // Import CSS module
 import logo from '../assets/LOGO for WibeCheck.jpg';
@@ -7,12 +7,33 @@ import founder1 from "../assets/founder1.jpeg";
 import founder2 from "../assets/founder2.jpeg";
 import founder3 from "../assets/founder3.jpeg";
 
+import backgroundImage1 from "../assets/GroupPic1.jpg";
+import backgroundImage2 from "../assets/GroupPic2.jpg";
+import backgroundImage3 from "../assets/GroupPic3.jpg";
+import backgroundImage4 from "../assets/GroupPic2.jpg";
+import backgroundImage5 from "../assets/GroupPic5.jpg";
+
 function AboutPage() {
     const navigate = useNavigate();
+    const images = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage4, backgroundImage5];
 
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isImageVisible, setIsImageVisible] = useState(false);
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIsImageVisible(false);
+            setTimeout(() => {
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+                setIsImageVisible(true);
+            }, 500);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+    
     return (
         <div className={styles.container}>
-            {/* Navbar */}
             <div className={styles.navBar}>
                 <div className={styles.test}>
                     <div className={styles.nameOfApp}>
@@ -32,7 +53,7 @@ function AboutPage() {
             <section className={styles.hero}>
                 <div className={styles.heroText}>
                     <h1 className={styles.heroTitle}>Welcome to WibeCheck</h1>
-                    <p className={styles.heroSubtext}>A social media platform for sharing your vibes with the world</p>
+                    <p className={styles.heroSubtext}>A platform that facially detects your emotions and gives you a playlist according to your wibes.</p>
                 </div>
             </section>
 
@@ -41,9 +62,16 @@ function AboutPage() {
                 <p>Made for the UGA Hacks X.</p>
             </section>
 
+            <div class={styles.imageContainer}>
+                <img className={`${styles.backgroundImg} ${isImageVisible ? styles.active : ''}`} 
+                src={images[currentImageIndex]} 
+                alt="Background Image"
+                />
+            </div>
+
             <section className={styles.founders}>
                 <h2>Meet the Founders</h2>
-                <p>Who are we?</p>
+                <p>Who are we? Get to know us!!!</p>
 
                 <div className={styles.founderCards}>
                     <div className={styles.card}>
