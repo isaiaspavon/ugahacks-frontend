@@ -297,18 +297,44 @@ nav a{
   background-color: #efefef;
   height: 325px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   width: 96%;
+  max-width: 1200px;
   margin-top: 35px;
   border-radius: 75px;
-  margin-left: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+.bigInfoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.bigInfoLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.bigInfoLogo{
+  width: 335px;
+  height: auto;
+  border-radius: 30px;
+  padding-right: 15px;
+
 }
 
 .bigInfoTitle {
-  margin-left: 5%;
-  
   background: linear-gradient(90deg, #0AFDF7, #FC08FD, #0AFDF7);
   background-size: 200% 200%; 
   -webkit-background-clip: text;
@@ -318,7 +344,6 @@ nav a{
 }
 
 .smallInfoTitle {
-  margin-left: 5%;
   color: black;
   /*
   background: linear-gradient(90deg, #FC08FD, #0AFDF7, #FC08FD);
@@ -330,7 +355,6 @@ nav a{
 }
 
 .smallerInfoTitle{
-  margin-left: 49%;
   /*background: linear-gradient(90deg, #FC08FD, #0AFDF7, #FC08FD);
   background-size: 200% 200%; 
   -webkit-background-clip: text;
@@ -343,17 +367,32 @@ nav a{
   flex-direction: row;
 }
 
-.activityButton {
+.startContainer {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.startText {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.activityButton {
   justify-content: row;
   background: #00e0dc;
   color: whitesmoke;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
-  margin-left: 10%;
-  /*margin-left: 25%;*/
+  border-radius: 12px;
+  padding: 10px 25px;
+  /*
   white-space: nowrap;
+  */
 }
 
 .activityButton:hover {
