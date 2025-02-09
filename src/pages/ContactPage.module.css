@@ -12,11 +12,12 @@ body {
     background-color:#E2B3FF;
     padding: 20px;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 50%;
+    height: 700px;
     min-width: 35vw;
-    margin-top: 80px; /* Adjust based on navbar height */
+    margin-top: 90px; /* Adjust based on navbar height */
   }
 
   .firstName{

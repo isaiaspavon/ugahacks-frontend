@@ -21,12 +21,13 @@ function AboutPage() {
     const [isImageVisible, setIsImageVisible] = useState(false);
     
     useEffect(() => {
+        setIsImageVisible(true); 
         const interval = setInterval(() => {
             setIsImageVisible(false);
             setTimeout(() => {
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
                 setIsImageVisible(true);
-            }, 500);
+            }, 1000);
         }, 3000);
 
         return () => clearInterval(interval);
