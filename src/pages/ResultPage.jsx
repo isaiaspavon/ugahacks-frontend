@@ -119,7 +119,7 @@ const ResultPage = () => {
                     {results.map((item) => (
                         <div key={item.id} className={styles.gridItem}>
                             <img src={item.image} alt={item.name} className={styles.songImage} />
-                            <p className={styles.songLabel}>{item.name}</p>
+                            <p className={styles.songLabel}>{item.name.length > 20 ? `${item.name.substring(0, 20)}...` : item.name}</p>
                         </div>
                     ))}
                 </div>
