@@ -1,0 +1,200 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #1e1e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card */
+.card {
+  height: 700px !important;
+  width: 500px;
+  padding: 25px 20px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Text */
+.headerText {
+  color: #4d4d4d;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Istok Web', sans-serif;
+  text-align: center;
+}
+
+/* Subtext */
+.subtext {
+  color: #717171;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+/* Auth Buttons */
+.authButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 90%;
+  align-items: center;
+  margin-right: -10px;
+}
+
+.authButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 47%;
+  max-width: 325px;
+  height: 45px !important;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.authButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Divider */
+.hrContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.hrContainer hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.orText {
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+/* Form Rows (First Name & Last Name) */
+.formRow {
+  display: flex;
+  gap: 25px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: -70px;
+}
+
+/* Form Columns (Email & Password) */
+.formColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 10px;
+}
+
+/* Input Groups */
+.inputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold; 
+  color: #4d4d4d;
+  margin-bottom: 5px; 
+}
+
+.inputGroup input {
+  min-width: 200px !important;
+  max-width: 600px !important;
+  width: 90% !important;
+  height: 30px !important;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 8px; 
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputGroup input:focus {
+  border-color: #6d57ff;
+}
+
+/* Continue Button */
+.continueButton {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 470px;
+  height: 40px;
+  background-color: #6d57ff;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Istok Web', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.continueButton:hover {
+  background-color: #5a43e0;
+}
+
+/* No Account Section */
+.noAccount {
+  display: flex;
+  color:black;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.createOne {
+  color: #6d57ff;
+  cursor: pointer;
+  padding:0;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.createOne:hover {
+  color: #0600cc;
+}

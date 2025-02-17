@@ -1,0 +1,92 @@
+/* General Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/backgroundGIF.gif') center center / cover no-repeat;
+    filter: blur(10px) !important;
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.card {
+    background-color: #9b83a3;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.highlight {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.spotifyCode {
+    margin-top: 20px;
+}
+
+.bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-top: 20px;
+}
+
+.bar {
+    width: 5px;
+    background-color: black;
+    border-radius: 2px;
+    transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.spotifyIcon {
+    width: 35px;
+    height: 35px;
+}
+
+.footerText {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    background-color: #121221;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contactUs {
+    text-align: center;
+    background-color:#E2B3FF;
+    padding: 20px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 700px;
+    min-width: 35vw;
+    margin-top: 90px; /* Adjust based on navbar height */
+  }
+
+  .firstName{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
+  }
+  
+  .emailPart{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
+  }
+
+  .message{
+    display:flex;
+    flex-direction: column;
+     margin-bottom:10px;
+
+  }
+
+  .contactUs p {
+    font-size: 16px;
+    color:black
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background-color: maroon;
+    margin: 20px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about{
+    margin-left: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-left: 17px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  h1{
+    color:black;
+
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    color:black;
+    max-width: 300px;
+    background-color: aliceblue;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 32vw;
+    margin:auto;
+    }
+  
+
+  h2{
+    color:black;
+  }
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit {
+    background-color: maroon;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit:hover {
+    background-color: darkred;
+  }
+  
+  #root, #__next { /* If using Next.js */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .specialName{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    justify-content: center;
+  }
+
+  
+.navBar{
+    background-color: #1e1e2e;
+    outline: solid 1px black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 5px;
+}
+
+.nameOfApp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.logo {
+    height: 45px;
+    width: auto;
+}
+  
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logoButton{
+    background-color:rgb(30,30,46);
+    }
+
+    .login, .getStarted {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    .login {
+        background-color: gray;
+        color: white;
+        margin-right: 15px;
+    }
+    
+    .getStarted {
+        background-color: #6d57ff;
+        color: white;
+    }
+    
