@@ -4,9 +4,9 @@ WibeCheck is a music recommendation app that analyzes facial expressions using a
 
 ## Tech Stack
 
-Frontend: React(Vite), JavaScript, css, HTML
+Frontend: React(Vite), JavaScript, CSS, HTML
 
-API & Tools: Spotify API, Luxand (Emotion detection API)
+API & Tools: Spotify API, Luxand (AI Emotion detection API)
 
 ## Features
 
