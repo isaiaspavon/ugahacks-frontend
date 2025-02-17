@@ -10,7 +10,7 @@ API & Tools: Spotify API, Luxand (AI Emotion detection API)
 
 ## Features
 
-Facial Emotion Detection: Uses Luxand to analyze expressions from an image and give a overall "mood"
+Facial Emotion Detection: Uses Luxand to analyze expressions from an image and give a overall "mood".
 
 Mood-Based Playlist Generation: Matches detected emotions with appropriate songs and displays in a grid structure
 
