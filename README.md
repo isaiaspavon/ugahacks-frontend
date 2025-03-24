@@ -1,3 +1,7 @@
+## YouTube Demo
+
+https://www.youtube.com/watch?v=kcsO_Uw4pE4
+
 ## Overview
 
 WibeCheck is a music recommendation app that analyzes facial expressions using an emotion-detector API called Luxand to detect emotions and generate a personalized playlist based on the detected mood. Each curated dataset suggests songs that match various emotions such as happy, sad, angry, neutral, and sleepy.
@@ -12,9 +16,9 @@ API & Tools: Spotify API, Luxand (AI Emotion detection API)
 
 Facial Emotion Detection: Uses Luxand to analyze expressions from an image and give a overall "mood".
 
-Mood-Based Playlist Generation: Matches detected emotions with appropriate songs and displays in a grid structure
+Mood-Based Playlist Generation: Matches detected emotions with appropriate songs and displays in a grid structure.
 
-Fast & INteractive UI: Built with React and optimizes for performance
+Fast & INteractive UI: Built with React and optimizes for performance.
 
 ## Instructions
 
@@ -127,6 +131,8 @@ Finally push your changes:
 ```  
 $ git push origin main
 ```
+
+Fixed my "Isaias authored Isaias" commit error so now my commits show properly
 
 
 
